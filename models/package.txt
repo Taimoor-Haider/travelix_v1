@@ -1,0 +1,95 @@
+[
+  {
+    "title": "Sunny Beaches",
+    "travelClubName": "Beachside Escapes",
+    "img": "https://plus.unsplash.com/premium_photo-1677343210638-5d3ce6ddbf85?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "duration": "3 days & 2 nights",
+    "personsAllowed": 2,
+    "price": 15000,
+    "amenities": [
+      "Beachfront view 🏖️",
+      "Complimentary breakfast 🍳",
+      "Homestays with local families 🏡",
+      "Private chauffeur service 🚗",
+      "Spa and wellness treatments 💆",
+      "Gourmet dining experiences 🍷",
+      "Exclusive access to cultural events 🎭",
+      "Luxurious cruise or yacht trip ⛴️"
+    ],
+    "rating": 9.2,
+    "noOfReview": 34,
+    "owner": {
+      "image": "",
+      "name": "Khalid Hussain"
+    },
+    "distance": "1100km",
+    "availableDates": ["15 Jan,2024 - 18 Jan,2024"],
+
+    "city": "Goa, India",
+    "feedbacks": [{}],
+    "description": "Enjoy the beautiful sunny beaches of Goa.",
+    "features": ["Pool", "Wifi", "AC", "Food"]
+  },
+  {
+    "title": "Mountain Retreat",
+    "travelClubName": "Highland Adventures",
+    "imag": "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHx8",
+    "duration": "7 days & 6 nights",
+    "personsAllowed": 4,
+    "price": 30000,
+    "amenities": [
+      "Mountain view 🏔️",
+      "Guided hiking tours 🥾",
+      "Local cuisine tasting 🍲",
+      "Dance and music shows 🎶",
+      "Guided historical city tours 🏛️",
+      "Visits to iconic landmarks 🗼",
+      "Cultural workshops and classes 🎨"
+    ],
+    "rating": 8.5,
+    "distance": "250km",
+    "noOfReview": 21,
+    "owner": {
+      "image": "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHx8",
+      "name": "Khalid Hussain"
+    },
+
+    "availableDates": [
+      "20 Feb,2024 - 27 Feb,2024",
+      "10 Feb,2024 - 17 Feb,2024"
+    ],
+    "city": "Manali, Himachal Pradesh, India",
+    "feedbacks": [{}],
+    "description": "Escape to the serene mountains of Manali.",
+    "features": ["Pool", "Wifi", "AC"]
+  },
+  {
+    "title": "Historic City Tour",
+    "travelClubName": "City Explorers",
+    "imag": "https://plus.unsplash.com/premium_photo-1676139860329-4997a02843c0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2fHx8ZW58MHx8fHx8",
+    "duration": "4 days & 3 nights",
+    "price": 18000,
+    "distance": "100km",
+    "personsAllowed": 5,
+    "amenities": [
+      "City guide included 🗺️",
+      "Cultural experience 🏛️",
+      "Traditional music and dance performances 🎶",
+      "Local handicraft shopping 🛍️",
+      "Cooking classes for regional cuisine 🍳",
+      "Historical reenactments and festivals 🎉"
+    ],
+    "rating": 9.0,
+    "noOfReview": 40,
+    "owner": {
+      "image": "",
+      "name": "Khalid Hussain"
+    },
+    "availableDates": ["05 Mar,2024 - 09 Mar,2024", "17 Mar,2024 - 29 Mar,20"],
+
+    "city": "Rome, Italy",
+    "feedbacks": [{}],
+    "description": "Discover the rich history of Rome with our expert guides.",
+    "features": ["Pool", "Wifi", "AC", "Food"]
+  }
+]

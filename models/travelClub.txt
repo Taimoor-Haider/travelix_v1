@@ -1,0 +1,33 @@
+
+async function createTravelClub(){
+    const travelClub=new TravelClub({
+    ownerId:"65d04d2e8f4c011a80185579",
+    name:"Beachside Escapes",
+    description:"Travel club for the beaches of Manali.",
+    location:"Manali, Himachal Pradesh, India",
+    rating:4,numberOfReviews:10,tours:["65d04d3d32739310b019a5b4"]});
+
+    try {
+        const travelClub1=await travelClub.save();
+        console.log(travelClub1);
+    } catch (ex) {
+        console.log(ex);
+    }
+}
+
+const getTravelClubs=async()=>{
+    // Assuming Feedback is the model for the feedbackSchema
+
+   const clubs=await TravelClub.find({})
+   .populate('ownerId','-_id firstName lastName email')
+   .select("name description rating numberOfReviews")
+   console.log(clubs);
+
+   const tours=await TravelClub.find().populate("tours","titel description city").select("tours -_id");
+   for (let [key, value] of Object.entries(tours)) {
+    console.log('Key:', key);
+    console.log('Value:', value);
+}
+}
+getTravelClubs();
+// createTravelClub();

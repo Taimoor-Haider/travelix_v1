@@ -1,0 +1,58 @@
+
+async function createTourPackage(){
+    const tour=new Tour({title:"Sunny Beaches",travelClubId:"65d1aacc6e1263f6102ea4d7",
+    description:"Escape to the serene mountains of Manali.",city:"Manali, Himachal Pradesh, India",
+    images:["/abc/image1","/abc/image2","/abc/image3"],duration:"2 days and 3 nights",personsAllowed:4,amenities:[
+        "City guide included 🗺️",
+        "Cultural experience 🏛️",
+        "Traditional music and dance performances 🎶",
+        "Local handicraft shopping 🛍️",
+        "Cooking classes for regional cuisine 🍳",
+        "Historical reenactments and festivals 🎉"
+    ],
+        rating:4,
+        numberOfReviews:10,
+        availableDates: [
+            {startDate:new Date('2024-03-01'), finishDate: new Date('2024-03-10')} ,
+            {startDate: new Date('2024-04-15'), finishDate:new Date('2024-04-25')} ,
+        ]
+    })
+
+    try {
+        const newTour=await tour.save();
+        console.log(newTour);
+    } catch (ex) {
+        console.log(ex)
+    }
+}
+createTourPackage();
+
+async function getTourPackage(){
+    const tour=await Tour.findById("65d04d3d32739310b019a5b4");
+    tour.availableDates[0].startDate = new Date("2024-01-10");
+    tour.save();
+
+    // const tour=await Tour.updateOne({_id:"65d04d3d32739310b019a5b4"},{
+    //     $unset:{
+    //        "availableDates[0].startDate": new Date("2024-01-10"),
+    //     }
+    // });
+}
+
+async function addDateToTourPackage(id,date){
+
+    const tour=await Tour.findById(id);
+    tour.availableDates.push(date);
+    tour.save();
+
+}
+
+async function removeDateFromTourPackage(tourId,dateId){
+    const tour=await Tour.findById(tourId);
+    tour.availableDates.pull(dateId);
+    await tour.save();
+}
+const date=new AvailableDates({startDate: new Date("2024-01-10"), finishDate: new Date("2024-02-15")})
+// addDateToTourPackage("65d04d3d32739310b019a5b4",date);
+// removeDateFromTourPackage("65d04d3d32739310b019a5b4","65d06786ad5264a86268fba1");
+// getTourPackage();

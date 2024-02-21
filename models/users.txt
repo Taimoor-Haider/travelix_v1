@@ -1,0 +1,48 @@
+const users=[
+    {
+        firstName:"Hammad",
+        lastName:"Ahmed",
+        email:"xyz@gmail.com",
+        phone:"03114193299",
+        password:"10121314",
+        image:"/images/customer2",
+        role:"tourOwner"
+    },
+    {
+        firstName:"Taimoor",
+        lastName:"Haider",
+        email:"tamiraja823@gmail.com",
+        phone:"03440844689",
+        password:"10121314",
+        image:"/images/customer3",
+        role:"superAdmin"
+    },{
+        firstName:"Ashraf",
+        lastName:"Gadani",
+        email:"abc@gmail.com",
+        phone:"03114193286",
+        password:"910111213",
+        image:"/images/customer2",
+        role:"user"
+    }
+]
+
+
+async function createUser(){
+    const user=new User({
+        firstName:"Taimoor",
+        lastName:"Haider",
+        email:"tamiraja823@gmail.com",
+        phone:"03440844689",
+        password:"10121314",
+        image:"/images/customer3",
+        role:"superAdmin"
+    })
+    try {
+        const user1=await user.save();
+        console.log(user1);
+    } catch (ex) {
+        console.log(ex.message);
+    }
+}
+createUser();
